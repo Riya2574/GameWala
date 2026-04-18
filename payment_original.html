@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Payment - GameWala</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode.js/1.5.3/qrcode.min.js"></script>
+</head>
+<body>
+  <div class="upperHeader">
+    <div class="logo"><h1><a href="index.html">GameWala</a></h1></div>
+    <div class="searchBar">
+      <input type="text" placeholder="Find your next gaming gear..." />
+      <button type="submit">Search</button>
+    </div>
+    <div class="headerActions">
+      <div class="iconBtn">
+        <i class="fa-regular fa-heart"></i>
+        <span class="badge">0</span>
+      </div>
+      <div class="iconBtn">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="badge2">0</span>
+      </div>
+      <div class="userLinks">
+        <i class="fa-regular fa-user"></i>
+        <div class="auth">
+          <a href="#">Log in</a>
+          <span class="divider">|</span>
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="payment-page">
+    <div class="payment-container">
+      <!-- Order Summary -->
+      <div class="payment-header">
+        <h1>Checkout</h1>
+        <p class="order-id">Order ID: <span id="orderId">#GW2026001</span></p>
+      </div>
+
+      <!-- Payment Amount -->
+      <div class="payment-amount-box">
+        <div class="amount-label">Total Amount</div>
+        <div class="amount-value">₹<span id="totalAmount">4,999</span></div>
+      </div>
+
+      <!-- Payment Methods -->
+      <div class="payment-methods">
+        <h2>Select Payment Method</h2>
+        
+        <div class="methods-grid">
+          <!-- Cash on Delivery -->
+          <div class="payment-method-card" data-method="cod">
+            <div class="method-icon">
+              <i class="fa-solid fa-wallet"></i>
+            </div>
+            <div class="method-name">Cash on Delivery</div>
+            <div class="method-desc">Pay when you receive</div>
+            <input type="radio" name="payment" value="cod" class="method-radio" />
+            <div class="check-mark">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <!-- UPI -->
+          <div class="payment-method-card" data-method="upi">
+            <div class="method-icon">
+              <i class="fa-solid fa-mobile"></i>
+            </div>
+            <div class="method-name">UPI</div>
+            <div class="method-desc">Scan & Pay instantly</div>
+            <input type="radio" name="payment" value="upi" class="method-radio" />
+            <div class="check-mark">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="payment-method-card" data-method="card">
+            <div class="method-icon">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <div class="method-name">Debit/Credit Card</div>
+            <div class="method-desc">Safe & Secure</div>
+            <input type="radio" name="payment" value="card" class="method-radio" />
+            <div class="check-mark">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UPI QR Code Panel -->
+      <div class="upi-panel hidden" id="upiPanel">
+        <h2>Scan QR Code to Pay</h2>
+        <p class="qr-amount">Amount: ₹<span id="qrAmount">4,999</span></p>
+        <div class="qr-container">
+          <div id="qrCode" class="qr-code"></div>
+        </div>
+        <p class="qr-instruction">Scan this QR code using any UPI app</p>
+        <button class="confirm-btn" onclick="confirmUPIPayment()">Payment Done</button>
+      </div>
+
+      <!-- Card Payment Panel -->
+      <div class="card-panel hidden" id="cardPanel">
+        <h2>Card Details</h2>
+        <form class="card-form">
+          <div class="form-group">
+            <label>Card Number</label>
+            <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" class="card-input" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Expiry Date</label>
+              <input type="text" placeholder="MM/YY" maxlength="5" class="card-input" />
+            </div>
+            <div class="form-group">
+              <label>CVV</label>
+              <input type="text" placeholder="123" maxlength="4" class="card-input" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Cardholder Name</label>
+            <input type="text" placeholder="Name on Card" class="card-input" />
+          </div>
+          <button type="button" class="confirm-btn" onclick="confirmCardPayment()">Pay ₹<span id="cardAmount">4,999</span></button>
+        </form>
+      </div>
+
+      <!-- COD Confirmation -->
+      <div class="cod-panel hidden" id="codPanel">
+        <div class="cod-success">
+          <i class="fa-solid fa-check-circle"></i>
+          <h2>Order Confirmed!</h2>
+          <p>Your order will be delivered to your address.</p>
+          <p class="cod-note">Amount to be paid: ₹<span id="codAmount">4,999</span></p>
+          <button class="confirm-btn" onclick="confirmCODPayment()">Continue Shopping</button>
+        </div>
+      </div>
+
+      <!-- Place Order Button -->
+      <div class="payment-footer">
+        <button class="place-order-btn" id="placeOrderBtn" onclick="handlePlaceOrder()">Place Order</button>
+        <a href="cart.html" class="back-to-cart">← Back to Cart</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="payment.js"></script>
+</body>
+</html>

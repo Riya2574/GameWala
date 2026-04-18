@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Cart - GameWala</title>
+</head>
+<body>
+  <div class="upperHeader">
+    <div class="logo"><h1><a href="index.html">GameWala</a></h1></div>
+
+    <div class="searchBar">
+      <input type="text" placeholder="Find your next gaming gear...">
+      <button type="submit">Search</button>
+    </div>
+
+    <div class="headerActions">
+      <div class="iconBtn">
+        <i class="fa-regular fa-heart"></i>
+        <span class="badge">0</span>
+      </div>
+      <div class="iconBtn">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="badge2">0</span>
+      </div>
+      <div class="userLinks">
+        <i class="fa-regular fa-user"></i>
+        <div class="auth">
+          <a href="#">Log in</a>
+          <span class="divider">|</span>
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="lowerHeader">
+  <div class="navBar">
+    
+
+    <div class="dropdown">
+      <a href="playstation.html"><i class="fa-brands fa-playstation dropdown-icon"></i> PlayStation <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content">
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 2</h4>
+            <a href="playstation2.html">Gaming Console</a>
+            <a href="games.html?platform=ps2">Games</a>
+            <a href="accessories.html">PS2 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 3</h4>
+            <a href="playstation3.html">Gaming Console</a>
+            <a href="games.html?platform=ps3">Games</a>
+            <a href="accessories.html">PS3 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 4</h4>
+            <a href="playstation4.html">Gaming Console</a>
+            <a href="games.html?platform=ps4">Games</a>
+            <a href="accessories.html">PS4 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 5</h4>
+            <a href="playstation5.html">Gaming Console</a>
+            <a href="games.html?platform=ps5">Games</a>
+            <a href="accessories.html">PS5 Accessories</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="xbox.html"><i class="fa-brands fa-xbox dropdown-icon"></i> Xbox <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content">
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX 360</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox 360 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX ONE X</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox One X Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX ONE S</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox One S Accessories</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#"><i class="fa-solid fa-list-ul dropdown-icon"></i> Games <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content medium">
+        <a href="games.html">All Games</a>
+        <a href="games.html?platform=ps2">PlayStation 2 GameList</a>
+        <a href="games.html?platform=ps3">PlayStation 3 GameList</a>
+        <a href="games.html?platform=ps4">PlayStation 4 GameList</a>
+        <a href="games.html?platform=ps5">PlayStation 5 GameList</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#"><i class="fa-solid fa-gamepad dropdown-icon"></i> Retro Gaming <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content small">
+        <a href="retro.html#bit8">8 Bit video Games</a>
+        <a href="retro.html#bit16">16 Bit video Games</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#"><i class="fa-solid fa-envelope dropdown-icon"></i> Contact Us</a>
+    </div>
+
+  </div>
+</div>
+
+  <main class="cart-page">
+    <div class="cart-container">
+      <h1>Shopping Cart</h1>
+      
+      <div class="cart-content">
+        <div class="cart-items-section">
+          <div id="cartItems" class="cart-items">
+            <!-- Cart items will be populated here by JavaScript -->
+          </div>
+          <div id="emptyCart" class="empty-cart-message">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>Your cart is empty</p>
+            <a href="index.html" class="continue-shopping">Continue Shopping</a>
+          </div>
+        </div>
+
+        <div class="cart-summary-section">
+          <div class="cart-summary">
+            <h2>Order Summary</h2>
+            
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span id="subtotal">₹0</span>
+            </div>
+            
+            <div class="summary-row">
+              <span>Shipping</span>
+              <span id="shipping">Free</span>
+            </div>
+            
+            <div class="summary-row">
+              <span>Tax</span>
+              <span id="tax">₹0</span>
+            </div>
+            
+            <div class="summary-divider"></div>
+            
+            <div class="summary-row total">
+              <span>Total</span>
+              <span id="total">₹0</span>
+            </div>
+
+            <button class="place-order-btn" id="placeOrderBtn" onclick="proceedToPayment()">
+              Place Order
+            </button>
+            
+            <a href="index.html" class="continue-link">← Continue Shopping</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="cart.js"></script>
+  <script>
+    // Display cart items
+    function displayCart() {
+      const cart = JSON.parse(localStorage.getItem('gamewalaCart') || '[]');
+      const cartItems = document.getElementById('cartItems');
+      const emptyCart = document.getElementById('emptyCart');
+      const placeOrderBtn = document.getElementById('placeOrderBtn');
+
+      if (cart.length === 0) {
+        cartItems.innerHTML = '';
+        emptyCart.style.display = 'flex';
+        placeOrderBtn.disabled = true;
+        placeOrderBtn.style.opacity = '0.5';
+        updateSummary(0);
+        return;
+      }
+
+      emptyCart.style.display = 'none';
+      placeOrderBtn.disabled = false;
+      placeOrderBtn.style.opacity = '1';
+
+      let total = 0;
+      cartItems.innerHTML = cart.map((item, index) => {
+        const itemTotal = (item.price || 0) * (item.quantity || 1);
+        total += itemTotal;
+        return `
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="${item.image || 'photo/placeholder.png'}" alt="${item.name}">
+            </div>
+            <div class="item-details">
+              <h3>${item.name}</h3>
+              <p class="item-price">₹${(item.price || 0).toLocaleString('en-IN')}</p>
+            </div>
+            <div class="item-quantity">
+              <button onclick="updateQuantity(${index}, -1)">−</button>
+              <span>${item.quantity || 1}</span>
+              <button onclick="updateQuantity(${index}, 1)">+</button>
+            </div>
+            <div class="item-total">
+              ₹${itemTotal.toLocaleString('en-IN')}
+            </div>
+            <button class="remove-btn" onclick="removeFromCart(${index})">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        `;
+      }).join('');
+
+      updateSummary(total);
+    }
+
+    function updateSummary(subtotal) {
+      const tax = Math.floor(subtotal * 0.18);
+      const total = subtotal + tax;
+
+      document.getElementById('subtotal').textContent = `₹${subtotal.toLocaleString('en-IN')}`;
+      document.getElementById('tax').textContent = `₹${tax.toLocaleString('en-IN')}`;
+      document.getElementById('total').textContent = `₹${total.toLocaleString('en-IN')}`;
+
+      // Store total in localStorage for payment page
+      localStorage.setItem('cartTotal', total);
+    }
+
+    function updateQuantity(index, change) {
+      const cart = JSON.parse(localStorage.getItem('gamewalaCart') || '[]');
+      if (cart[index]) {
+        cart[index].quantity = Math.max(1, (cart[index].quantity || 1) + change);
+        localStorage.setItem('gamewalaCart', JSON.stringify(cart));
+        displayCart();
+      }
+    }
+
+    function removeFromCart(index) {
+      const cart = JSON.parse(localStorage.getItem('gamewalaCart') || '[]');
+      cart.splice(index, 1);
+      localStorage.setItem('gamewalaCart', JSON.stringify(cart));
+      displayCart();
+    }
+
+    function proceedToPayment() {
+      const cart = JSON.parse(localStorage.getItem('gamewalaCart') || '[]');
+      if (cart.length === 0) {
+        alert('Your cart is empty');
+        return;
+      }
+      window.location.href = 'payment.html';
+    }
+
+    // Load cart on page load
+    displayCart();
+  </script>
+  <section class="white-section" style="padding: 60px 24px;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h1 style="font-size: 2.8rem; margin-bottom: 16px; color: #0a3cff;">Your Cart</h1>
+      <p style="color: #4b5563; font-size: 1.1rem; margin-bottom: 32px;">Review items in your cart, update quantities, and proceed to checkout when you’re ready.</p>
+      <div id="cartItems"></div>
+    </div>
+  </section>
+
+  <script src="cart.js"></script>
+</body>
+</html>

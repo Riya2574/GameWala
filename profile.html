@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Profile - GameWala</title>
+  <style>
+    body {
+      background: white;
+      min-height: 100vh;
+      font-family: 'Exo 2', sans-serif;
+      color: #1a202c;
+    }
+
+    .profile-wrapper {
+      max-width: 1100px;
+      margin: 80px auto 60px;
+      padding: 40px 30px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 32px;
+      align-items: flex-start;
+    }
+
+    .profile-card {
+      background: #f8fbff;
+      border-radius: 18px;
+      padding: 28px;
+      border: 1px solid rgba(13, 91, 215, 0.18);
+      box-shadow: 0 10px 30px rgba(13, 91, 215, 0.12);
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #0a3cff;
+      background: radial-gradient(circle at top, rgba(10, 60, 255, 0.25), rgba(10, 60, 255, 0.05));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: #0a3cff;
+    }
+
+    .profile-title {
+      font-size: 2.2rem;
+      margin: 0;
+      color: #0a3cff;
+      letter-spacing: 0.04em;
+    }
+
+    .profile-meta {
+      color: rgba(26, 32, 44, 0.65);
+      margin-top: 6px;
+      font-size: 0.95rem;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .stat {
+      background: rgba(10, 60, 255, 0.05);
+      border-radius: 14px;
+      padding: 16px;
+      text-align: center;
+      border: 1px solid rgba(10, 60, 255, 0.18);
+    }
+
+    .stat h3 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #0a3cff;
+    }
+
+    .stat p {
+      margin: 6px 0 0;
+      font-size: 0.95rem;
+      color: rgba(26, 32, 44, 0.75);
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+      color: #0a3cff;
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 0.02em;
+    }
+
+    .card-row {
+      display: grid;
+      gap: 18px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 20px;
+      border: 1px solid rgba(10, 60, 255, 0.16);
+      box-shadow: 0 8px 18px rgba(10, 60, 255, 0.08);
+    }
+
+    .card h4 {
+      margin: 0 0 12px;
+      font-size: 1.2rem;
+      color: #0a3cff;
+    }
+
+    .card p {
+      margin: 0;
+      line-height: 1.6;
+      color: rgba(26, 32, 44, 0.8);
+    }
+
+    .edit-btn {
+      margin-top: 18px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      border: none;
+      background: linear-gradient(135deg, #ffd700 0%, #ffbd33 100%);
+      color: #0a3cff;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .edit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(255, 189, 51, 0.4);
+    }
+
+    @media (max-width: 900px) {
+      .profile-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .stats {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="upperHeader">
+    <div class="logo"><h1><a href="index.html">GameWala</a></h1></div>
+
+    <div class="searchBar">
+      <input type="text" placeholder="Find your next gaming gear...">
+      <button type="submit">Search</button>
+    </div>
+
+    <div class="headerActions">
+      <div class="iconBtn">
+        <i class="fa-regular fa-heart"></i>
+        <span class="badge">0</span>
+      </div>
+      <div class="iconBtn">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="badge2">0</span>
+      </div>
+      <div class="userLinks">
+        <i class="fa-regular fa-user"></i>
+        <div class="auth">
+          <a href="profile.html">Profile</a>
+          <span class="divider">|</span>
+          <a href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="lowerHeader">
+  <div class="navBar">
+    
+
+    <div class="dropdown">
+      <a href="playstation.html"><i class="fa-brands fa-playstation dropdown-icon"></i> PlayStation <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content">
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 2</h4>
+            <a href="playstation2.html">Gaming Console</a>
+            <a href="games.html?platform=ps2">Games</a>
+            <a href="accessories.html">PS2 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 3</h4>
+            <a href="playstation3.html">Gaming Console</a>
+            <a href="games.html?platform=ps3">Games</a>
+            <a href="accessories.html">PS3 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 4</h4>
+            <a href="playstation4.html">Gaming Console</a>
+            <a href="games.html?platform=ps4">Games</a>
+            <a href="accessories.html">PS4 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 5</h4>
+            <a href="playstation5.html">Gaming Console</a>
+            <a href="games.html?platform=ps5">Games</a>
+            <a href="accessories.html">PS5 Accessories</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="xbox.html"><i class="fa-brands fa-xbox dropdown-icon"></i> Xbox <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content">
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX 360</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox 360 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX ONE X</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox One X Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX ONE S</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox One S Accessories</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#"><i class="fa-solid fa-list-ul dropdown-icon"></i> Games <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content medium">
+        <a href="games.html">All Games</a>
+        <a href="games.html?platform=ps2">PlayStation 2 GameList</a>
+        <a href="games.html?platform=ps3">PlayStation 3 GameList</a>
+        <a href="games.html?platform=ps4">PlayStation 4 GameList</a>
+        <a href="games.html?platform=ps5">PlayStation 5 GameList</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#"><i class="fa-solid fa-gamepad dropdown-icon"></i> Retro Gaming <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content small">
+        <a href="retro.html#bit8">8 Bit video Games</a>
+        <a href="retro.html#bit16">16 Bit video Games</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#"><i class="fa-solid fa-envelope dropdown-icon"></i> Contact Us</a>
+    </div>
+
+  </div>
+</div>
+
+  <div class="profile-wrapper">
+    <div class="profile-grid">
+      <div class="profile-card">
+        <div class="profile-header">
+          <div class="avatar">G</div>
+          <div>
+            <h1 class="profile-title">GameWala Gamer</h1>
+            <div class="profile-meta">Joined: January 2025 • Level: Elite</div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <h3>58</h3>
+            <p>Orders Placed</p>
+          </div>
+          <div class="stat">
+            <h3>12</h3>
+            <p>Wishlist Items</p>
+          </div>
+          <div class="stat">
+            <h3>4.9</h3>
+            <p>Average Rating</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4>Account Info</h4>
+          <p><strong>Email:</strong> gamer@example.com</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Location:</strong> Delhi, India</p>
+          <button class="edit-btn">Edit Profile</button>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <h2 class="section-title">Recent Orders</h2>
+
+        <div class="card-row">
+          <div class="card">
+            <h4>#1023 • Delivered</h4>
+            <p><strong>Item:</strong> PS5 DualSense Controller</p>
+            <p><strong>Date:</strong> Mar 10, 2026</p>
+          </div>
+          <div class="card">
+            <h4>#1017 • Shipped</h4>
+            <p><strong>Item:</strong> Xbox Wireless Headset</p>
+            <p><strong>Date:</strong> Feb 28, 2026</p>
+          </div>
+          <div class="card">
+            <h4>#1004 • Delivered</h4>
+            <p><strong>Item:</strong> Retro Game Console</p>
+            <p><strong>Date:</strong> Feb 12, 2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

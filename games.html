@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>All Games - GameWala</title>
+</head>
+<body>
+
+  <div class="upperHeader">
+    <div class="logo"><h1><a href="index.html">GameWala</a></h1></div>
+
+    <div class="searchBar">
+      <input type="text" placeholder="Find your next gaming gear...">
+      <button type="submit">Search</button>
+    </div>
+
+    <div class="headerActions">
+      <div class="iconBtn">
+        <i class="fa-regular fa-heart"></i>
+        <span class="badge">0</span>
+      </div>
+      <div class="iconBtn">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="badge2">0</span>
+      </div>
+      <div class="userLinks">
+        <i class="fa-regular fa-user"></i>
+        <div class="auth">
+          <a href="#">Log in</a>
+          <span class="divider">|</span>
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="lowerHeader">
+  <div class="navBar">
+    
+
+    <div class="dropdown">
+      <a href="playstation.html"><i class="fa-brands fa-playstation dropdown-icon"></i> PlayStation <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content">
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 2</h4>
+            <a href="playstation2.html">Gaming Console</a>
+            <a href="games.html?platform=ps2">Games</a>
+            <a href="accessories.html">PS2 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 3</h4>
+            <a href="playstation3.html">Gaming Console</a>
+            <a href="games.html?platform=ps3">Games</a>
+            <a href="accessories.html">PS3 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 4</h4>
+            <a href="playstation4.html">Gaming Console</a>
+            <a href="games.html?platform=ps4">Games</a>
+            <a href="accessories.html">PS4 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 5</h4>
+            <a href="playstation5.html">Gaming Console</a>
+            <a href="games.html?platform=ps5">Games</a>
+            <a href="accessories.html">PS5 Accessories</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="xbox.html"><i class="fa-brands fa-xbox dropdown-icon"></i> Xbox <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content">
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX 360</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox 360 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX ONE X</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox One X Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX ONE S</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox One S Accessories</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#"><i class="fa-solid fa-list-ul dropdown-icon"></i> Games <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content medium">
+        <a href="games.html">All Games</a>
+        <a href="games.html?platform=ps2">PlayStation 2 GameList</a>
+        <a href="games.html?platform=ps3">PlayStation 3 GameList</a>
+        <a href="games.html?platform=ps4">PlayStation 4 GameList</a>
+        <a href="games.html?platform=ps5">PlayStation 5 GameList</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#"><i class="fa-solid fa-gamepad dropdown-icon"></i> Retro Gaming <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content small">
+        <a href="retro.html#bit8">8 Bit video Games</a>
+        <a href="retro.html#bit16">16 Bit video Games</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#"><i class="fa-solid fa-envelope dropdown-icon"></i> Contact Us</a>
+    </div>
+
+  </div>
+</div>
+
+
+<section class="page-hero aling-items-center justify-content-center">
+    <h1>All Games</h1>
+    <p>Enhance your gaming setup with controllers, headsets, chargers, and more. Click a card to learn more or add it to your cart.</p>
+  </section>
+
+  
+  <section class="filters">
+    <div class="filter-container">
+      <div class="filter-group">
+        <label>Platform:</label>
+        <select id="platform-filter">
+          <option value="all">All Platforms</option>
+          <option value="ps2">PS2</option>
+          <option value="ps3">PS3</option>
+          <option value="ps4">PS4</option>
+          <option value="ps5">PS5</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Rating:</label>
+        <select id="rating-filter">
+          <option value="all">All Ratings</option>
+          <option value="5">5 Stars</option>
+          <option value="4">4+ Stars</option>
+          <option value="3">3+ Stars</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Price:</label>
+        <select id="price-filter">
+          <option value="all">All Prices</option>
+          <option value="low">Under ₹2,000</option>
+          <option value="mid">₹2,000 - ₹4,000</option>
+          <option value="high">Over ₹4,000</option>
+        </select>
+      </div>
+      <button id="reset-filters" class="reset-btn">Reset Filters</button>
+    </div>
+  </section>
+
+  <section class="popular-games">
+    <h2>Top Picks</h2>
+    <div class="popular-grid">
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/gta5.jpg" alt="GTA V Cover">
+        <div class="card-content">
+          <h3>GTA V</h3>
+          <p>Grand Theft Auto V - Open-world action adventure with endless possibilities in Los Santos.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.9 (250)</span>
+          </div>
+          <div class="price">₹4,999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/godofwar.jpg" alt="God of War Cover">
+        <div class="card-content">
+          <h3>God of War Ragnarok</h3>
+          <p>Epic Norse mythology adventure with Kratos and Atreus. Stunning visuals and combat.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.9 (180)</span>
+          </div>
+          <div class="price">₹5,499</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/lastofus2.jpg" alt="The Last of Us Cover">
+        <div class="card-content">
+          <h3>The Last of Us Part II</h3>
+          <p>Gritty post-apocalyptic survival story with emotional depth and intense gameplay.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.8 (320)</span>
+          </div>
+          <div class="price">₹3,999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/fifa23.jpg" alt="FIFA 23 Cover">
+        <div class="card-content">
+          <h3>FIFA 23</h3>
+          <p>Ultimate football simulation with HyperMotion2 technology for realistic matches.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.7 (410)</span>
+          </div>
+          <div class="price">₹2,999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <h2 style="margin: 50px 0; background-color: #f0f0f0; color: #333; padding: 10px; border-radius: 5px;">Playstation 2 Games</h2>
+    <div class="popular-grid">
+      <a href="javascript:void(0)" class="game-card" data-platform="ps2">
+        <img src="photo/banner_example.png" alt="PS2 Controller">
+        <div class="card-content">
+          <h3>PS2 Controller</h3>
+          <p>Original DualShock controller for PS2 gaming.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.5 (150)</span>
+          </div>
+          <div class="price">₹1,299</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS2 Memory Card">
+        <div class="card-content">
+          <h3>PS2 Memory Card</h3>
+          <p>8MB memory card for saving PS2 games.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.6 (200)</span>
+          </div>
+          <div class="price">₹599</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card" data-platform="ps2">
+        <img src="photo/banner_example.png" alt="PS2 AV Cable">
+        <div class="card-content">
+          <h3>PS2 AV Cable</h3>
+          <p>Composite AV cable for connecting PS2 to TV.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.4 (100)</span>
+          </div>
+          <div class="price">₹399</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card" data-platform="ps2">
+        <img src="photo/banner_example.png" alt="PS2 Hard Drive">
+        <div class="card-content">
+          <h3>PS2 Hard Drive</h3>
+          <p>40GB hard drive for PS2 with network adapter.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.3 (80)</span>
+          </div>
+          <div class="price">₹2,999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="popular-grid">
+      <a href="javascript:void(0)" class="game-card" data-platform="ps2">
+        <img src="photo/banner_example.png" alt="PS2 Headset">
+        <div class="card-content">
+          <h3>PS2 Headset</h3>
+          <p>Headset for online gaming on PS2.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.2 (60)</span>
+          </div>
+          <div class="price">₹899</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card" data-platform="ps2">
+        <img src="photo/banner_example.png" alt="PS2 Charger">
+        <div class="card-content">
+          <h3>PS2 Charger</h3>
+          <p>AC adapter for PS2 console.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.5 (120)</span>
+          </div>
+          <div class="price">₹799</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card" data-platform="ps2">
+        <img src="photo/banner_example.png" alt="PS2 Steering Wheel">
+        <div class="card-content">
+          <h3>PS2 Steering Wheel</h3>
+          <p>Steering wheel controller for racing games.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.4 (90)</span>
+          </div>
+          <div class="price">₹1,499</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card" data-platform="ps2">
+        <img src="photo/banner_example.png" alt="PS2 Multitap">
+        <div class="card-content">
+          <h3>PS2 Multitap</h3>
+          <p>Multitap for connecting multiple controllers.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.3 (70)</span>
+          </div>
+          <div class="price">₹699</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="accessory-section ps3-section">
+    <h2 style="margin: 20px 0; background-color: #f0f0f0; color: #333; padding: 10px; border-radius: 5px;">Playstation 3 Games</h2>
+    <div class="popular-grid">
+      <a href="javascript:void(0)" class="game-card" data-platform="ps3">
+        <img src="photo/banner_example.png" alt="PS3 Controller">
+        <div class="card-content">
+          <h3>PS3 Controller</h3>
+          <p>Sixaxis wireless controller for PS3.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.6 (300)</span>
+          </div>
+          <div class="price">₹1,499</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card" data-platform="ps3">
+        <img src="photo/banner_example.png" alt="PS3 Headset">
+        <div class="card-content">
+          <h3>PS3 Headset</h3>
+          <p>Bluetooth headset for PS3 online gaming.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.4 (180)</span>
+          </div>
+          <div class="price">₹999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card" data-platform="ps3">
+        <img src="photo/banner_example.png" alt="PS3 Move Controller">
+        <div class="card-content">
+          <h3>PS3 Move Controller</h3>
+          <p>Motion controller for PS3 motion games.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.2 (150)</span>
+          </div>
+          <div class="price">₹1,299</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS3 Hard Drive">
+        <div class="card-content">
+          <h3>PS3 Hard Drive</h3>
+          <p>500GB hard drive for PS3 storage.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.5 (200)</span>
+          </div>
+          <div class="price">₹3,499</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="popular-grid">
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS3 Camera">
+        <div class="card-content">
+          <h3>PS3 Camera</h3>
+          <p>EyeToy camera for PS3 motion games.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.1 (100)</span>
+          </div>
+          <div class="price">₹1,999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS3 Blu-ray Remote">
+        <div class="card-content">
+          <h3>PS3 Blu-ray Remote</h3>
+          <p>Remote control for PS3 Blu-ray playback.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.3 (80)</span>
+          </div>
+          <div class="price">₹599</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS3 Charging Station">
+        <div class="card-content">
+          <h3>PS3 Charging Station</h3>
+          <p>Charging dock for PS3 controllers.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.4 (120)</span>
+          </div>
+          <div class="price">₹1,199</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS3 Vertical Stand">
+        <div class="card-content">
+          <h3>PS3 Vertical Stand</h3>
+          <p>Vertical stand for PS3 console.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.2 (90)</span>
+          </div>
+          <div class="price">₹499</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+    </div>
+    <div class="accessory-section ps4-section">
+    <h2 style="margin: 20px 0; background-color: #f0f0f0; color: #333; padding: 10px; border-radius: 5px;">Playstation 4 Games</h2>
+    <div class="popular-grid">
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS4 Controller">
+        <div class="card-content">
+          <h3>PS4 Controller</h3>
+          <p>DualShock 4 wireless controller.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.7 (500)</span>
+          </div>
+          <div class="price">₹3,999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS4 Headset">
+        <div class="card-content">
+          <h3>PS4 Headset</h3>
+          <p>Wireless headset for PS4 gaming.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.5 (350)</span>
+          </div>
+          <div class="price">₹4,999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS4 Camera">
+        <div class="card-content">
+          <h3>PS4 Camera</h3>
+          <p>HD camera for PS4 VR and streaming.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.3 (250)</span>
+          </div>
+          <div class="price">₹2,999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS4 External Hard Drive">
+        <div class="card-content">
+          <h3>PS4 External Hard Drive</h3>
+          <p>1TB external HDD for PS4 storage.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.6 (400)</span>
+          </div>
+          <div class="price">₹4,499</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="popular-grid">
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS4 VR Headset">
+        <div class="card-content">
+          <h3>PS4 VR Headset</h3>
+          <p>Virtual reality headset for PS4.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.4 (300)</span>
+          </div>
+          <div class="price">₹19,999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS4 Charging Station">
+        <div class="card-content">
+          <h3>PS4 Charging Station</h3>
+          <p>Charging dock for DualShock 4 controllers.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.5 (200)</span>
+          </div>
+          <div class="price">₹2,499</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS4 Media Remote">
+        <div class="card-content">
+          <h3>PS4 Media Remote</h3>
+          <p>Remote control for PS4 media playback.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.2 (150)</span>
+          </div>
+          <div class="price">₹999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS4 Vertical Stand">
+        <div class="card-content">
+          <h3>PS4 Vertical Stand</h3>
+          <p>Vertical stand for PS4 console.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.3 (180)</span>
+          </div>
+          <div class="price">₹799</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+    </div>
+    <div class="accessory-section ps5-section">
+    <h2 style="margin: 20px 0; background-color: #f0f0f0; color: #333; padding: 10px; border-radius: 5px;">Playstation 5 Games</h2>
+    <div class="popular-grid">
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS5 Controller">
+        <div class="card-content">
+          <h3>PS5 Controller</h3>
+          <p>DualSense wireless controller.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.8 (600)</span>
+          </div>
+          <div class="price">₹5,499</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS5 Headset">
+        <div class="card-content">
+          <h3>PS5 Headset</h3>
+          <p>Wireless headset with 3D audio.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.6 (450)</span>
+          </div>
+          <div class="price">₹9,999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS5 HD Camera">
+        <div class="card-content">
+          <h3>PS5 HD Camera</h3>
+          <p>HD camera for PS5 streaming and VR.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.4 (300)</span>
+          </div>
+          <div class="price">₹4,999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS5 External SSD">
+        <div class="card-content">
+          <h3>PS5 External SSD</h3>
+          <p>1TB SSD for faster PS5 loading.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.7 (400)</span>
+          </div>
+          <div class="price">₹8,999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="popular-grid">
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS5 Charging Station">
+        <div class="card-content">
+          <h3>PS5 Charging Station</h3>
+          <p>Charging dock for DualSense controllers.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.5 (250)</span>
+          </div>
+          <div class="price">₹3,499</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS5 Media Remote">
+        <div class="card-content">
+          <h3>PS5 Media Remote</h3>
+          <p>Remote control for PS5 media features.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.3 (200)</span>
+          </div>
+          <div class="price">₹1,499</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS5 Pulse 3D Headset">
+        <div class="card-content">
+          <h3>PS5 Pulse 3D Headset</h3>
+          <p>Official PS5 wireless headset.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.5 (350)</span>
+          </div>
+          <div class="price">₹9,999</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="game-card">
+        <img src="photo/banner_example.png" alt="PS5 Vertical Stand">
+        <div class="card-content">
+          <h3>PS5 Vertical Stand</h3>
+          <p>Vertical stand for PS5 console.</p>
+          <div class="rating">
+            <span class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span class="rating-text">4.4 (220)</span>
+          </div>
+          <div class="price">₹1,299</div>
+          <div class="card-actions">
+            <i class="fa-regular fa-heart card-heart"></i>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </a>
+    </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>GameWala</h3>
+        <p>Your one-stop shop for gaming consoles, games & accessories. From PS2 classics to PS5 next-gen.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">PlayStation</a></li>
+          <li><a href="#">Xbox</a></li>
+          <li><a href="#">Retro Gaming</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Warranty Info</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Cash on Delivery</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 GameWala. All rights reserved. | Made with ❤️ for gamers.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Add a “Buy Now” button + cart icon next to the heart in each card action row, and remove the old Add to Cart button.
+    document.querySelectorAll('.card-actions').forEach(actionRow => {
+      // remove old Add to Cart button
+      const oldCartBtn = actionRow.querySelector('.add-to-cart');
+      if (oldCartBtn) oldCartBtn.remove();
+
+      // add Buy Now button
+      if (!actionRow.querySelector('.buy-now')) {
+        const buyBtn = document.createElement('button');
+        buyBtn.className = 'buy-now';
+        buyBtn.innerHTML = '<i class="fas fa-credit-card"></i> Buy Now';
+        actionRow.appendChild(buyBtn);
+      }
+
+      // add Cart icon in the action row (alongside heart)
+      if (!actionRow.querySelector('.card-cart')) {
+        const cartIcon = document.createElement('i');
+        cartIcon.className = 'fas fa-cart-shopping card-cart';
+        cartIcon.title = 'Add to cart';
+        actionRow.insertBefore(cartIcon, actionRow.firstChild);
+      }
+    });
+
+    // Add data attributes to cards for filtering
+    document.querySelectorAll('.game-card').forEach(card => {
+      const title = card.querySelector('h3').textContent.toLowerCase();
+      const ratingText = card.querySelector('.rating-text').textContent;
+      const rating = parseFloat(ratingText.split(' ')[0]);
+      const priceText = card.querySelector('.price').textContent;
+      const price = parseInt(priceText.replace('₹', '').replace(',', ''));
+
+      // Determine platform based on title
+      let platform = 'top'; // default for top picks
+      if (title.includes('ps2')) platform = 'ps2';
+      else if (title.includes('ps3')) platform = 'ps3';
+      else if (title.includes('ps4')) platform = 'ps4';
+      else if (title.includes('ps5')) platform = 'ps5';
+
+      card.setAttribute('data-platform', platform);
+      card.setAttribute('data-rating', Math.floor(rating));
+      card.setAttribute('data-price', price);
+    });
+
+    // Filter functionality
+    function filterCards() {
+      const platformFilter = document.getElementById('platform-filter').value;
+      const ratingFilter = document.getElementById('rating-filter').value;
+      const priceFilter = document.getElementById('price-filter').value;
+
+      document.querySelectorAll('.game-card').forEach(card => {
+        const platform = card.getAttribute('data-platform');
+        const rating = parseInt(card.getAttribute('data-rating'));
+        const price = parseInt(card.getAttribute('data-price'));
+
+        let show = true;
+
+        // Platform filter
+        if (platformFilter !== 'all' && platform !== platformFilter) show = false;
+
+        // Rating filter
+        if (ratingFilter !== 'all') {
+          const minRating = parseInt(ratingFilter);
+          if (rating < minRating) show = false;
+        }
+
+        // Price filter
+        if (priceFilter !== 'all') {
+          if (priceFilter === 'low' && price >= 2000) show = false;
+          else if (priceFilter === 'mid' && (price < 2000 || price > 4000)) show = false;
+          else if (priceFilter === 'high' && price <= 4000) show = false;
+        }
+
+        card.style.display = show ? 'block' : 'none';
+      });
+    }
+
+    // Add event listeners
+    document.getElementById('platform-filter').addEventListener('change', filterCards);
+    document.getElementById('rating-filter').addEventListener('change', filterCards);
+    document.getElementById('price-filter').addEventListener('change', filterCards);
+    document.getElementById('reset-filters').addEventListener('click', () => {
+      document.getElementById('platform-filter').value = 'all';
+      document.getElementById('rating-filter').value = 'all';
+      document.getElementById('price-filter').value = 'all';
+      document.querySelectorAll('.game-card').forEach(card => card.style.display = 'block');
+    });
+
+    // If a platform is specified in the URL (e.g., ?platform=ps2), apply it on load.
+    (function applyPlatformFilterFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      const platformFromUrl = params.get('platform');
+      const allowed = ['all', 'ps2', 'ps3', 'ps4', 'ps5'];
+
+      if (!platformFromUrl || !allowed.includes(platformFromUrl)) return;
+
+      const platformSelect = document.getElementById('platform-filter');
+      if (!platformSelect) return;
+
+      platformSelect.value = platformFromUrl;
+      filterCards();
+    })();
+  </script>
+  <script src="cart.js"></script>
+
+</body>
+</html>

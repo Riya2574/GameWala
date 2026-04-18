@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Log In - GameWala</title>
+  <style>
+    .login-container {
+      max-width: 400px;
+      margin: 80px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-container h1 {
+      text-align: center;
+      color: #0a3cff;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #e0e0e0;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: all 0.3s;
+      box-sizing: border-box;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: #0a3cff;
+      box-shadow: 0 0 8px rgba(10, 60, 255, 0.2);
+    }
+
+    .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      font-size: 0.9rem;
+    }
+
+    .remember-forgot a {
+      color: #0a3cff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .remember-forgot a:hover {
+      color: #0828cc;
+      text-decoration: underline;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #0a3cff 0%, #0828cc 100%);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .login-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(10, 60, 255, 0.4);
+    }
+
+    .signup-link {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+    }
+
+    .signup-link a {
+      color: #0a3cff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .signup-link a:hover {
+      color: #0828cc;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 25px 0;
+      color: #999;
+    }
+
+    .social-login {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .social-btn {
+      flex: 1;
+      padding: 12px;
+      border: 2px solid #e0e0e0;
+      background: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .social-btn:hover {
+      border-color: #0a3cff;
+      background: #f5f7ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="upperHeader">
+    <div class="logo"><h1><a href="index.html">GameWala</a></h1></div>
+
+    <div class="searchBar">
+      <input type="text" placeholder="Find your next gaming gear...">
+      <button type="submit">Search</button>
+    </div>
+
+    <div class="headerActions">
+      <div class="iconBtn">
+        <i class="fa-regular fa-heart"></i>
+        <span class="badge">0</span>
+      </div>
+      <div class="iconBtn">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="badge2">0</span>
+      </div>
+      <div class="userLinks">
+        <i class="fa-regular fa-user"></i>
+        <div class="auth">
+          <a href="login.html">Log in</a>
+          <span class="divider">|</span>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="lowerHeader">
+  <div class="navBar">
+    
+
+    <div class="dropdown">
+      <a href="playstation.html"><i class="fa-brands fa-playstation dropdown-icon"></i> PlayStation <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content">
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 2</h4>
+            <a href="playstation2.html">Gaming Console</a>
+            <a href="games.html?platform=ps2">Games</a>
+            <a href="accessories.html">PS2 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 3</h4>
+            <a href="playstation3.html">Gaming Console</a>
+            <a href="games.html?platform=ps3">Games</a>
+            <a href="accessories.html">PS3 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 4</h4>
+            <a href="playstation4.html">Gaming Console</a>
+            <a href="games.html?platform=ps4">Games</a>
+            <a href="accessories.html">PS4 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 5</h4>
+            <a href="playstation5.html">Gaming Console</a>
+            <a href="games.html?platform=ps5">Games</a>
+            <a href="accessories.html">PS5 Accessories</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="xbox.html"><i class="fa-brands fa-xbox dropdown-icon"></i> Xbox <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content">
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX 360</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox 360 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX ONE X</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox One X Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX ONE S</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox One S Accessories</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#"><i class="fa-solid fa-list-ul dropdown-icon"></i> Games <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content medium">
+        <a href="games.html">All Games</a>
+        <a href="games.html?platform=ps2">PlayStation 2 GameList</a>
+        <a href="games.html?platform=ps3">PlayStation 3 GameList</a>
+        <a href="games.html?platform=ps4">PlayStation 4 GameList</a>
+        <a href="games.html?platform=ps5">PlayStation 5 GameList</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#"><i class="fa-solid fa-gamepad dropdown-icon"></i> Retro Gaming <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content small">
+        <a href="retro.html#bit8">8 Bit video Games</a>
+        <a href="retro.html#bit16">16 Bit video Games</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#"><i class="fa-solid fa-envelope dropdown-icon"></i> Contact Us</a>
+    </div>
+
+  </div>
+</div>
+
+  <div class="login-container">
+    <h1>Log In</h1>
+    
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+
+      <div class="remember-forgot">
+        <label>
+          <input type="checkbox" name="remember"> Remember me
+        </label>
+        <a href="#">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="login-btn">Log In</button>
+    </form>
+
+    <div class="divider">OR</div>
+
+    <div class="social-login">
+      <button class="social-btn">
+        <i class="fab fa-google"></i> Google
+      </button>
+      <button class="social-btn">
+        <i class="fab fa-facebook"></i> Facebook
+      </button>
+    </div>
+
+    <p class="signup-link">
+      Don't have an account? <a href="signup.html">Sign Up here</a>
+    </p>
+  </div>
+
+  <!-- <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>GameWala</h3>
+        <p>Your one-stop shop for gaming consoles, games & accessories. From PS2 classics to PS5 next-gen.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">PlayStation</a></li>
+          <li><a href="#">Xbox</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Cash on Delivery</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 GameWala. All rights reserved. | Made with ❤️ for gamers.</p>
+    </div>
+  </footer> -->
+
+  <script src="cart.js"></script>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Login functionality will be implemented with backend integration');
+    });
+  </script>
+</body>
+</html>

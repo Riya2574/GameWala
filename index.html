@@ -4,90 +4,676 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Gaming Website</title>
 </head>
 <body>
 
    <div class="upperHeader">
-    <div class="logo">
-        <h1>GameWala</h1>
-    </div>
+    <div class="logo"><h1><a href="index.html">GameWala</a></h1></div>
+
     <div class="searchBar">
-        <input type="text" placeholder="Search...">
-        <button type="submit">Search</button>
+      <input type="text" placeholder="Find your next gaming gear...">
+      <button type="submit">Search</button>
     </div>
-    <div class="icons">
+
+    <div class="headerActions">
+      <div class="iconBtn">
         <i class="fa-regular fa-heart"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="badge">0</span>
+      </div>
+      <div class="iconBtn">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="badge2">0</span>
+      </div>
+      <div class="userLinks">
+        <a href="profile.html">
         <i class="fa-regular fa-user"></i>
+        <div class="auth"></a>
+          <a href="login.html">Log in</a>
+          <span class="divider">|</span>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
     </div>
+
     </div>
 
-
-
-  <div class="lowerHeader">
+    <div class="lowerHeader">
   <div class="navBar">
-
+    
     <div class="dropdown">
-      <a href="#">Home</a>
+      <a href="playstation.html"><i class="fa-brands fa-playstation dropdown-icon"></i> PlayStation <i class="fa fa-chevron-down"></i></a>
       <div class="dropdown-content">
-        <a href="#">Latest</a>
-        <a href="#">Trending</a>
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 2</h4>
+            <a href="playstation2.html">Gaming Console</a>
+            <a href="games.html?platform=ps2">Games</a>
+            <a href="accessories.html">PS2 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 3</h4>
+            <a href="playstation3.html">Gaming Console</a>
+            <a href="games.html?platform=ps3">Games</a>
+            <a href="accessories.html">PS3 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 4</h4>
+            <a href="playstation4.html">Gaming Console</a>
+            <a href="games.html?platform=ps4">Games</a>
+            <a href="accessories.html">PS4 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>SONY PLAYSTATION 5</h4>
+            <a href="playstation5.html">Gaming Console</a>
+            <a href="games.html?platform=ps5">Games</a>
+            <a href="accessories.html">PS5 Accessories</a>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="dropdown">
-      <a href="#">PlayStation</a>
+      <a href="xbox.html"><i class="fa-brands fa-xbox dropdown-icon"></i> Xbox <i class="fa fa-chevron-down"></i></a>
       <div class="dropdown-content">
-        <a href="#">PS5</a>
-        <a href="#">PS4</a>
-        <a href="#">Accessories</a>
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX 360</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox 360 Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX ONE X</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox One X Accessories</a>
+          </div>
+          <div class="mega-col">
+            <h4>MICROSOFT XBOX ONE S</h4>
+            <a href="#">Gaming Console</a>
+            <a href="#">Games</a>
+            <a href="#">Xbox One S Accessories</a>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="dropdown">
-      <a href="#">Xbox</a>
-      <div class="dropdown-content">
-        <a href="#">Xbox Series X</a>
-        <a href="#">Xbox One</a>
+      <a href="#"><i class="fa-solid fa-list-ul dropdown-icon"></i> Games <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content medium">
+        <a href="games.html">All Games</a>
+        <a href="games.html?platform=ps2">PlayStation 2 GameList</a>
+        <a href="games.html?platform=ps3">PlayStation 3 GameList</a>
+        <a href="games.html?platform=ps4">PlayStation 4 GameList</a>
+        <a href="games.html?platform=ps5">PlayStation 5 GameList</a>
       </div>
     </div>
 
     <div class="dropdown">
-      <a href="#">GameList</a>
-      <div class="dropdown-content">
-        <a href="#">Action</a>
-        <a href="#">Racing</a>
-        <a href="#">Adventure</a>
+      <a href="retro.html"><i class="fa-solid fa-gamepad dropdown-icon"></i> Retro Gaming <i class="fa fa-chevron-down"></i></a>
+      <div class="dropdown-content small">
+        <a href="retro.html#bit8">8 Bit video Games</a>
+        <a href="retro.html#bit16">16 Bit video Games</a>
       </div>
     </div>
 
     <div class="dropdown">
-      <a href="#">Retro Gaming</a>
-      <div class="dropdown-content">
-        <a href="#">NES</a>
-        <a href="#">SEGA</a>
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <a href="#">Contact Us</a>
-      <div class="dropdown-content">
-        <a href="#">Support</a>
-        <a href="#">Email</a>
-      </div>
+      <a href="contact.html"><i class="fa-solid fa-envelope dropdown-icon"></i> Contact Us</a>
     </div>
 
   </div>
 </div>
 
    <div class="banner">
-    <img src="bnner.jpg" alt="Banner Image">
+     <div class="banner-inner">
+       <img src="photo/banner_example.png" alt="Banner Image">
+     </div>
    </div>
 
-   <div class="shortCut"></div>
-   <div class="product"></div>
-   <div class="footer"></div>
-</body>
-</html>
+   <section class="shortCut">
+     <div class="shortcut-grid">
+       <a class="shortcut-card" href="platforms.html">
+         <img src="photo/square.png" alt="Gaming Consoles">
+         <span class="shortcut-label">Gaming Consoles</span>
+       </a>
+       <a class="shortcut-card" href="games.html">
+         <img src="photo/x.png" alt="Games">
+         <span class="shortcut-label">Games</span>
+       </a>
+       <a class="shortcut-card" href="accessories.html">
+         <img src="photo/circle.png" alt="Gaming Accessories">
+         <span class="shortcut-label">Gaming Accessories</span>
+       </a>
+       <a class="shortcut-card" href="retro.html">
+         <img src="photo/triangle.png" alt="Television">
+         <span class="shortcut-label">Television</span>
+       </a>
+     </div>
+   </section>
+
+   <section class="feature-row">
+     <div class="feature-card">
+       <i class="fa-solid fa-truck-fast feature-icon"></i>
+       <h3>Cash on Delivery</h3>
+       <p>Get free delivery all over India on almost all the products.</p>
+     </div>
+     <div class="feature-card">
+       <i class="fa-solid fa-shield-alt feature-icon"></i>
+       <h3>Extended Warranty</h3>
+       <p>Extended warranty options for added peace of mind on every purchase.</p>
+     </div>
+     <div class="feature-card">
+       <i class="fa-solid fa-gem feature-icon"></i>
+       <h3>Quality Assurance</h3>
+       <p>Top quality products tested by expert technicians.</p>
+     </div>
+   </section>
+
+<section class="popular-games">
+  <h2> Popular Games</h2>
+  <a href="games.html" class="view-more">View More →</a>
+  <div class="popular-grid">
+    <a href="javascript:void(0)" class="game-card">
+      <img src="photo/gta5.jpg" alt="GTA V Cover">
+      <div class="card-content">
+        <h3>GTA V</h3>
+        <p>Grand Theft Auto V - Open-world action adventure with endless possibilities in Los Santos.</p>
+        <div class="rating">
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="rating-text">4.9 (250)</span>
+        </div>
+        <div class="price">₹4,999</div>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart card-heart"></i>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </a>
+
+    <a href="javascript:void(0)" class="game-card">
+      <img src="photo/godofwar.jpg" alt="God of War Cover">
+      <div class="card-content">
+        <h3>God of War Ragnarok</h3>
+        <p>Epic Norse mythology adventure with Kratos and Atreus. Stunning visuals and combat.</p>
+        <div class="rating">
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="rating-text">4.9 (180)</span>
+        </div>
+        <div class="price">₹5,499</div>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart card-heart"></i>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </a>
+
+    <a href="javascript:void(0)" class="game-card">
+      <img src="photo/lastofus2.jpg" alt="The Last of Us Cover">
+      <div class="card-content">
+        <h3>The Last of Us Part II</h3>
+        <p>Gritty post-apocalyptic survival story with emotional depth and intense gameplay.</p>
+        <div class="rating">
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="rating-text">4.8 (320)</span>
+        </div>
+        <div class="price">₹3,999</div>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart card-heart"></i>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </a>
+
+    <a href="javascript:void(0)" class="game-card">
+      <img src="photo/fifa23.jpg" alt="FIFA 23 Cover">
+      <div class="card-content">
+        <h3>FIFA 23</h3>
+        <p>Ultimate football simulation with HyperMotion2 technology for realistic matches.</p>
+        <div class="rating">
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="rating-text">4.7 (410)</span>
+        </div>
+        <div class="price">₹2,999</div>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart card-heart"></i>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="popular-games">
+  <h2> Popular Accessories</h2>
+  <a href="accessories.html" class="view-more">View More →</a>
+  <div class="popular-grid">
+    <a href="javascript:void(0)" class="game-card">
+      <img src="photo/wirelesscontroller.webp" alt="Gaming Controller">
+      <div class="card-content">
+        <h3>Wireless Controller</h3>
+        <p>Ergonomic wireless gamepad with dual vibration and motion controls.</p>
+        <div class="rating">
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="rating-text">4.8 (289)</span>
+        </div>
+        <div class="price">₹2,499</div>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart card-heart"></i>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="game-card">
+      <img src="photo/assecclight.jpg" alt="Gaming Headset">
+      <div class="card-content">
+        <h3>Gaming Headset</h3>
+        <p>Surround sound headset with noise-canceling mic and comfortable fit.</p>
+        <div class="rating">
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="rating-text">4.9 (456)</span>
+        </div>
+        <div class="price">₹3,299</div>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart card-heart"></i>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="game-card">
+      <img src="photo/accesslogitechG29.jpg" alt="Charging Dock">
+      <div class="card-content">
+        <h3>Charging Dock</h3>
+        <p>Fast charging station for multiple controllers with LED indicators.</p>
+        <div class="rating">
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="rating-text">4.7 (198)</span>
+        </div>
+        <div class="price">₹1,899</div>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart card-heart"></i>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="game-card">
+      <img src="photo/accessps5.jpg" alt="Memory Card">
+      <div class="card-content">
+        <h3>Memory Card 128GB</h3>
+        <p>High-speed memory card for saving games and fast loading times.</p>
+        <div class="rating">
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="rating-text">4.6 (367)</span>
+        </div>
+        <div class="price">₹1,299</div>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart card-heart"></i>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+<section class="popular-games">
+  <h2> Retro Gaming Hits</h2>
+  <a href="retro.html" class="view-more">View More →</a>
+  <div class="popular-grid">
+    <a href="javascript:void(0)" class="game-card">
+      <img src="photo/retro1.jpg" alt="Super Mario Bros 3 Cover">
+      <div class="card-content">
+        <h3>Super Mario Bros 3 (NES)</h3>
+        <p>Classic platformer with 8-bit graphics and memorable levels that defined a generation.</p>
+        <div class="rating">
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="rating-text">4.9 (512)</span>
+        </div>
+        <div class="price">₹1,499</div>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart card-heart"></i>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="game-card">
+      <img src="photo/retro2.jpg" alt="Street Fighter II Cover">
+      <div class="card-content">
+        <h3>Street Fighter II (SNES)</h3>
+        <p>Iconic fighting game with legendary roster and quarter-circle forward hadoukens.</p>
+        <div class="rating">
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="rating-text">4.8 (423)</span>
+        </div>
+        <div class="price">₹1,799</div>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart card-heart"></i>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="game-card">
+      <img src="photo/retro3.jpg" alt="Sonic the Hedgehog Cover">
+      <div class="card-content">
+        <h3>Sonic the Hedgehog (Genesis)</h3>
+        <p>Fast-paced 16-bit platformer with speed, rings, and attitude.</p>
+        <div class="rating">
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="rating-text">4.9 (387)</span>
+        </div>
+        <div class="price">₹1,299</div>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart card-heart"></i>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="game-card">
+      <img src="photo/retro4.jpg" alt="Retro Arcade Stick">
+      <div class="card-content">
+        <h3>Retro Arcade Stick</h3>
+        <p>Authentic arcade experience at home with 8-way joystick and button layout.</p>
+        <div class="rating">
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </span>
+          <span class="rating-text">4.7 (289)</span>
+        </div>
+        <div class="price">₹3,499</div>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart card-heart"></i>
+          <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </a>
+  </div>
+  </section>
+
+
+<!-- Testimonials Section Added -->
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title">What Our Gamers Are Saying ⭐</h2>
+<div class="testimonial-marquee">
+    <div class="testimonial-track">
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos velit odio dolores suscipit delectus repudiandae debitis sint, qui quas eaque iusto eveniet non pariatur ipsam sit commodi sed eum accusamus?Best place to get retro consoles! Got my PS2 in perfect condition with all cables. Fast delivery and great packaging!"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://via.placeholder.com/60x60/00d4ff/ffffff?text=RG" alt="Raj G." class="author-avatar">
+          <div>
+            <h4>Raj Gamer</h4>
+            <span class="author-role">Retro Enthusiast</span>
+            <div class="author-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"God of War Ragnarok arrived sealed and authentic. Customer service resolved my query in minutes. Highly recommend!"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://via.placeholder.com/60x60/7b2cbf/ffffff?text=SP" alt="Priya S." class="author-avatar">
+          <div>
+            <h4>Priya Singh</h4>
+            <span class="author-role">PS5 Player</span>
+            <div class="author-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Wireless headset quality is top-notch. COD service was smooth, and price beat everywhere else. Game on!"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://via.placeholder.com/60x60/f5b700/111111?text=AK" alt="Amit K." class="author-avatar">
+          <div>
+            <h4>Amit Kumar</h4>
+            <span class="author-role">Xbox Gamer</span>
+            <div class="author-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Super Mario Bros 3 took me back to childhood. Authentic cartridge, fast shipping. Will buy more retro gems!"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://via.placeholder.com/60x60/00d4ff/ffffff?text=NS" alt="Neha S." class="author-avatar">
+          <div>
+            <h4>Neha Sharma</h4>
+            <span class="author-role">Nintendo Fan</span>
+            <div class="author-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Best place to get retro consoles! Got my PS2 in perfect condition with all cables. Fast delivery and great packaging!"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://via.placeholder.com/60x60/00d4ff/ffffff?text=RG" alt="Raj G." class="author-avatar">
+          <div>
+            <h4>Raj Gamer</h4>
+            <span class="author-role">Retro Enthusiast</span>
+            <div class="author-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"God of War Ragnarok arrived sealed and authentic. Customer service resolved my query in minutes. Highly recommend!"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://via.placeholder.com/60x60/7b2cbf/ffffff?text=SP" alt="Priya S." class="author-avatar">
+          <div>
+            <h4>Priya Singh</h4>
+            <span class="author-role">PS5 Player</span>
+            <div class="author-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Wireless headset quality is top-notch. COD service was smooth, and price beat everywhere else. Game on!"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://via.placeholder.com/60x60/f5b700/111111?text=AK" alt="Amit K." class="author-avatar">
+          <div>
+            <h4>Amit Kumar</h4>
+            <span class="author-role">Xbox Gamer</span>
+            <div class="author-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Super Mario Bros 3 took me back to childhood. Authentic cartridge, fast shipping. Will buy more retro gems!"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://via.placeholder.com/60x60/00d4ff/ffffff?text=NS" alt="Neha S." class="author-avatar">
+          <div>
+            <h4>Neha Sharma</h4>
+            <span class="author-role">Nintendo Fan</span>
+            <div class="author-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- Footer Added -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>GameWala</h3>
+      <p>Your one-stop shop for gaming consoles, games & accessories. From PS2 classics to PS5 next-gen.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="#">PlayStation</a></li>
+        <li><a href="#">Xbox</a></li>
+        <li><a href="#">Retro Gaming</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Warranty Info</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Cash on Delivery</a></li>
+      </ul>
+    </div>
+  </div>
+    <div class="copyright">
+      <p>&copy; 2024 GameWala. All rights reserved. | Made with ❤️ for gamers.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="cart.js"></script>
+
